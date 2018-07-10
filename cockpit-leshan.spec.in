@@ -1,0 +1,26 @@
+Name: cockpit-leshan
+Version: @VERSION@
+Release: 0
+Summary: Cockpit Leshan Module
+License: LGPLv2.1+
+
+Source: cockpit-leshan-%{version}.tar.gz
+BuildArch: noarch
+
+%define debug_package %{nil}
+
+%description
+A Cockpit module to administer a Leshan LWM2M Server.
+
+%prep
+%setup -n cockpit-leshan
+
+%build
+make
+
+%install
+make install DESTDIR=%{buildroot}
+find %{buildroot} -type f >> files.list
+sed -i "s|%{buildroot}||" *.list
+
+%files -f files.list

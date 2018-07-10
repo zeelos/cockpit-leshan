@@ -1,0 +1,47 @@
+{
+  "name": "leshan",
+  "version": "0.1.0",
+  "description": "Leshan Module",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zeelos/cockpit-leshan.git"
+  },
+  "author": "zeelos",
+  "license": "Apache License",
+  "scripts": {
+    "build": "rm -rf dist/ && mkdir dist/ && cp -r src/* dist/" 
+  },
+  "bugs": {
+    "url": "https://github.com/zeelos/cockpit-leshan/issues"
+  },
+  "dependencies": {
+    "jquery": "^2.1.1",
+    "angular": "^1.2.17",
+    "angular-ui-bootstrap": "^0.12.1",
+    "bootstrap": "^3.1.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.2",
+    "chrome-remote-interface": "^0.25.5",
+    "compression-webpack-plugin": "~1.0.0",
+    "copy-webpack-plugin": "~3.0.1",
+    "css-loader": "^0.28.11",
+    "eslint": "^3.0.0",
+    "eslint-loader": "~1.6.1",
+    "eslint-plugin-react": "~6.9.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "htmlparser": "^1.7.7",
+    "jed": "^1.1.1",
+    "jshint": "~2.9.1",
+    "jshint-loader": "~0.8.3",
+    "po2json": "^0.4.5",
+    "sass-loader": "^7.0.3",
+    "sizzle": "^2.3.3",
+    "stdio": "^0.2.7",
+    "webpack": "^2.6.1"
+  }
+}
